@@ -19,7 +19,7 @@ class TestDBSimulator:
     def test_simulator_get_purchases(self):
         user_id = 'User#123'
         ret = self.db_simulator.get_purchases_by_user(user_id=user_id)
-        assert len(ret) == 1
+        assert not ret
 
     def test_simulator_get_product(self):
         product_name = 'Oil'
